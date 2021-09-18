@@ -2,7 +2,7 @@ from google.cloud import automl
 
 # TODO(developer): Uncomment and set the following variables
 project_id = "image-prediction-326402"
-dataset_id = "ICN2734200095011504128"
+dataset_id = "ICN5669421152150224896"
 path = "gs://image-prediction-326402-vcm/csv/all_data.csv"
 
 client = automl.AutoMlClient()
