@@ -1,1 +1,2 @@
 # YouDrawIGuess
+A RiceHack project.
