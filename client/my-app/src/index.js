@@ -10,6 +10,28 @@ import {
   ApolloProvider,
 } from "@apollo/client";
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBd4NZg0PJhy5A0qt6Ynjg6rPPcQGrfGas",
+  authDomain: "hackrice11-326402.firebaseapp.com",
+  projectId: "hackrice11-326402",
+  storageBucket: "hackrice11-326402.appspot.com",
+  messagingSenderId: "590587697803",
+  appId: "1:590587697803:web:7beaa4b1ee94f83131d28e",
+  measurementId: "G-GEESH3RH3Q"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 const client = new ApolloClient({
   uri: 
   
