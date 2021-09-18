@@ -11,11 +11,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  // Link
 } from "react-router-dom";
 
 function App() {
-  const { loading, error, data } = useQuery(gql`query Test{ test }`);
+  const { data } = useQuery(gql`query Test{ test }`);
 
   if(data) {
     console.log("test query: " , data);
@@ -62,3 +62,4 @@ function App() {
 }
 
 export default App;
+ 
