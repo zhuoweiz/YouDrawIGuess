@@ -5,6 +5,9 @@ const resolvers = {
     async user(root, { id }, { models }) {
       return models.User.findById(id);
     },
+    async test(root, { id }, { models }) {
+      return "HELLO HACKRICE";
+    },
     async allRecipes(root, args, { models }) {
       return models.Recipe.findAll();
     },
