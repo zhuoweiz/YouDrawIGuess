@@ -23,6 +23,12 @@ const resolvers = {
         password: await bcrypt.hash(password, 10),
       });
     },
+    async getQuestion(root, {}, { models }) {
+      var word_list = ["Hearts", "Flowers", "apple", "Stars", "Eyes", "Lips", "Trees", "Butterflies", "Leaves", "Diamonds"]
+      var question = word_list[Math.floor(Math.random()*word_list.length)];
+      console.log(question);
+      return question;
+    },
     async createRecipe(
       root,
       { userId, title, ingredients, direction },

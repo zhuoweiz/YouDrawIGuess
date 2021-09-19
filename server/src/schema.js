@@ -31,6 +31,8 @@ const typeDefs = gql`
       ingredients: String!
       direction: String!
     ): Recipe!
+  
+    getQuestion: String
   }
 `;
 
