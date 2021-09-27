@@ -42,7 +42,7 @@ async function startApolloServer() {
   });
   await server.start();
   
-  server.applyMiddleware({ app, path: '/graphql' });
+  server.applyMiddleware({ app, path: '/graphql' , cors: false},);
   // const port = process.env.PORT || 4000;
   // await new Promise((resolve) => app.listen({ port }, resolve));
   // console.log(`Apollo Server 3 listening on port ${port}`);
